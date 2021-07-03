@@ -77,6 +77,9 @@ export default function Usercreate() {
               {formik.errors.fname && formik.touched.fname ? (
                 <div> {formik.errors.fname}</div>
               ) : null}
+              {
+                console.log(formik.values.fname)
+              }
             </div>
             <div className="col-lg-6">
               <label htmlFor="lname"> Last Name</label>
